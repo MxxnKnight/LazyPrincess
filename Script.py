@@ -12,11 +12,11 @@ def is_enabled(value, default):
 
 class script(object):
     HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://clicksfly.com/ref/LazyDeveloperr')
-    START_TXT = environ.get("START_TXT", '''Hello {},
-Myself <a href=https://t.me/{}>{}</a>,\n\nTrust me ! I can't even imagine how super-fast i can drive your Database channel \n\nAre you ready for Long Drive Baby...🤪''')
+    START_TXT = environ.get("START_TXT", '''ʜᴇʟʟᴏ {},
+ɪᴀᴍ <a href=https://t.me/{}>{}</a>,\n\nᴀ ᴘᴏᴡᴇʀғᴜʟʟ ᴀᴜᴛᴏғɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ɴᴏ files😅\n\nʀᴇᴍᴇᴍʙᴇʀ....ᴘɪʀᴀᴄʏ ɪs ᴀ ᴄʀɪᴍᴇ\n\nഅത് ഞാൻ ചെയ്യില്ല...നീയും ചെയ്യില്ല 😼''')
     
-    HELP_TXT = """𝙷𝙴𝚈 {}
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
+    HELP_TXT = """ᴀʟᴏᴏ {}
+ɪ ᴡɪʟʟ ʜᴇʟᴩ ᴜ😌ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ ʙʀᴏᴏ.."""
     LZTHMB_TEXT = """Hello {},
 Glad to see you here. It seems that you really love <a href=https://t.me/LazyDeveloperr >LazyDeveloper's</a> work.\n\n<b>Thumbnail extracting</b> feature will be available soon, please join <a href=https://t.me/LazyDeveloper>Dev Channel</a> and stay tuned for next <a href=https://t.me/LazyDeveloper>update</a>.\n\n  🐞 Report Bug here: <a href=http://t.me/LazyDeveloperSupport>LazyDev Support</a>
     """
