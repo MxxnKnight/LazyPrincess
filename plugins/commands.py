@@ -83,9 +83,6 @@ async def start(client, message):
     if len(message.command) == 2 and message.command[1] in [ "okay", "help"]:
         buttons = [[
             [
-            InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('owner', url='https://t.me/Mxxn_Knight')
-            ],[
              InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
             InlineKeyboardButton('♥️ About ♥️', callback_data='about')
             ]
