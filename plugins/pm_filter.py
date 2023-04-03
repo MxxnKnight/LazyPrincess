@@ -580,8 +580,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton(' ᥫ᭡ ᎪᎠᎠ ᎷᎬ Ͳϴ ᎽϴႮᎡ ᏀᎡϴႮᏢ ☙', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('❥     օառɛʀ         ♂', url=f"https://telegram.me/Mxxn_Knight"),
-            InlineKeyboardButton('༒     ՏͲᎪͲႮՏ      ࿐', callback_data='status')
+            InlineKeyboardButton('❥      ϴᏔΝᎬᎡ        ♂', url=f"https://telegram.me/Mxxn_Knight"),
+            InlineKeyboardButton('༒     ՏͲᎪͲႮՏ      ࿐', callback_data='rename')
             ],[
              InlineKeyboardButton('༺    ᎻᎬᏞᏢ        ༻', callback_data='help'),
             InlineKeyboardButton('᭕      ᎪᏴϴႮͲ        ᘎ', callback_data='about')
