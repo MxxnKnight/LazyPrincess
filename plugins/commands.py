@@ -82,10 +82,16 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in [ "okay", "help"]:
         buttons = [[
-            [
-             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
-            InlineKeyboardButton('♥️ About ♥️', callback_data='about')
-            ]
+            InlineKeyboardButton(' ᥫ᭡ ᎪᎠᎠ ᎷᎬ Ͳϴ ᎽϴႮᎡ ᏀᎡϴႮᏢ ☙', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+            InlineKeyboardButton('❥      ϴᏔΝᎬᎡ        ♂', url=f"https://telegram.me/Mxxn_Knight"),
+            InlineKeyboardButton('༒     ՏͲᎪͲႮՏ      ࿐', callback_data='stats')
+            ],[
+             InlineKeyboardButton('༺    ᎻᎬᏞᏢ        ༻', callback_data='help'),
+            InlineKeyboardButton('᭕      ᎪᏴϴႮͲ        ᘎ', callback_data='about')
+            ], [
+            InlineKeyboardButton('ꔛ     ՏᎬᎪᎡᏟᎻ       ⊱', switch_inline_query_current_chat='') 
+            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
