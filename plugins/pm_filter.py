@@ -83,7 +83,7 @@ async def doc(bot, update):
     new_filename = new_name.split(":-")[1]
     file = update.message.reply_to_message
     file_path = f"downloads/{new_filename}"
-    ms = await update.message.edit("\n༻☬ད 𝘽𝙪𝙞𝙡𝙙𝙞𝙣𝙜 𝙇𝙖𝙯𝙮 𝙈𝙚𝙩𝙖𝘿𝙖𝙩𝙖...")
+    ms = await update.message.edit("\n༻☬ད 𝘽𝙪𝙞𝙡𝙙𝙞𝙣𝙜  𝙈𝙚𝙩𝙖𝘿𝙖𝙩𝙖...")
     c_time = time.time()
     try:
         path = await bot.download_media(
@@ -127,7 +127,7 @@ async def doc(bot, update):
         img = Image.open(ph_path)
         img.resize((320, 320))
         img.save(ph_path, "JPEG")
-    await ms.edit("三 𝘗𝘳𝘦𝘱𝘢𝘳𝘪𝘯𝘨 𝘵𝘰 𝘳𝘦𝘤𝘦𝘪𝘷𝘦 𝘓𝘢𝘻𝘺 𝘧𝘪𝘭𝘦...︻デ═一")
+    await ms.edit("三 𝘗𝘳𝘦𝘱𝘢𝘳𝘪𝘯𝘨 𝘵𝘰 𝘳𝘦𝘤𝘦𝘪𝘷𝘦 𝘧𝘪𝘭𝘦...︻デ═一")
     c_time = time.time() 
     try:
        if type == "document":
@@ -137,7 +137,7 @@ async def doc(bot, update):
                    thumb=ph_path, 
                    caption=caption, 
                    progress=progress_for_pyrogram,
-                   progress_args=( "**⎝⎝✧ ʀᴇᴄɪᴇᴠɪɴɢ ꜰɪʟᴇ ꜰʀᴏᴍ ʟᴀᴢʏ ꜱᴇʀᴠᴇʀ ✧⎠⎠**",  ms, c_time))
+                   progress_args=( "**⎝⎝✧ ʀᴇᴄɪᴇᴠɪɴɢ ꜰɪʟᴇ ꜰʀᴏᴍ ꜱᴇʀᴠᴇʀ ✧⎠⎠**",  ms, c_time))
        elif type == "video": 
            await bot.send_video(
 	        update.message.chat.id,
@@ -155,7 +155,7 @@ async def doc(bot, update):
 	        thumb=ph_path,
 	        duration=duration,
 	        progress=progress_for_pyrogram,
-	        progress_args=( "**⎝⎝✧ ʀᴇᴄɪᴇᴠɪɴɢ ꜰɪʟᴇ ꜰʀᴏᴍ ʟᴀᴢʏ ꜱᴇʀᴠᴇʀ ✧⎠⎠**",  ms, c_time   )) 
+	        progress_args=( "**⎝⎝✧ ʀᴇᴄɪᴇᴠɪɴɢ ꜰɪʟᴇ ꜰʀᴏᴍ ꜱᴇʀᴠᴇʀ ✧⎠⎠**",  ms, c_time   )) 
     except Exception as e: 
         await ms.edit(f" Erro {e}") 
         os.remove(file_path)
@@ -250,7 +250,7 @@ async def next_page(bot, query):
             ]
     btn.insert(0,
         [   
-	    InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://telegram.me/LazyDeveloper')
+	    InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://telegram.me/')
         ]   
     )
 
@@ -294,12 +294,12 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("😁 𝗛𝗲𝘆 𝗙𝗿𝗶𝗲𝗻𝗱,𝗣𝗹𝗲𝗮𝘀𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗼𝘂𝗿𝘀𝗲𝗹𝗳.", show_alert=True)
+        return await query.answer("😁 𝙷𝙴𝚈 𝚅𝚁𝙾𝙾,𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙴𝙰𝚁𝙲𝙷 𝚈𝙾𝚄𝚁𝚂𝙴𝙻𝙵.", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not movies:
-        return await query.answer("𝐋𝐢𝐧𝐤 𝐄𝐱𝐩𝐢𝐫𝐞𝐝 𝐊𝐢𝐧𝐝𝐥𝐲 𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐞𝐚𝐫𝐜𝐡 𝐀𝐠𝐚𝐢𝐧 🙂.", show_alert=True)
+        return await query.answer("ᏞᏆΝᏦ ᎬХᏢᏆᎡᎬᎠ ᏦᏆΝᎠᏞᎽ ᏢᏞᎬᎪՏᎬ ՏᎬᎪᎡᏟᎻ ᎪᏀᎪᏆΝ 🙂.", show_alert=True)
     movie = movies[(int(movie_))]
     await query.answer('𝙲𝙷𝙴𝙲𝙺𝙸𝙽𝙶 𝙵𝙸𝙻𝙴 𝙾𝙽 𝙼𝚈 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴...//')
     k = await manual_filters(bot, query.message, text=movie)
@@ -442,7 +442,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃')
+        return await query.answer('ᏟϴΝΝᎬᏟͲ Ͳϴ ᏆΝͲᎬᎡΝᎬͲ')
     elif "deletecb" in query.data:
         await query.answer()
 
@@ -460,7 +460,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃')
+        return await query.answer('ᏟϴΝΝᎬᏟͲ Ͳϴ ᏆΝͲᎬᎡΝᎬͲ')
     elif query.data == "backcb":
         await query.answer()
 
@@ -471,7 +471,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃')
+            return await query.answer('ᏟϴΝΝᎬᏟͲ Ͳϴ ᏆΝͲᎬᎡΝᎬͲ')
         buttons = []
         for groupid in groupids:
             try:
@@ -604,7 +604,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('❍  ᏟϴΝΝᎬᏟͲᏆϴΝՏ  ✧', callback_data='coct'),
             InlineKeyboardButton('❍  ᎬХͲᎡᎪ ᎷϴᎠՏ  ✧', callback_data='extra')
         ], [
-            InlineKeyboardButton('⫸    home    ⫷', callback_data='start'),
+            InlineKeyboardButton('⫷      ᎻϴᎷᎬ       ⫸', callback_data='start'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -736,8 +736,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "lazyhome":
-        text = f"""\n⨳ *•.¸♡ L҉ΛＺ𝐲 ＭⓄｄ𝓔 ♡¸.•* ⨳\n\n**Please tell, what should i do with this file.?**\n"""
-        buttons = [[ InlineKeyboardButton("📝✧ S𝚝ar𝚝 re𝚗aᗰi𝚗g ✧📝", callback_data="rename") ],
+        text = f"""\n⨳ •.¸♡ ᖇᗴᑎᗩᗰᗴ ᗰOᗪᗴ ♡¸.• ⨳\n\nᴘʟᴇᴀsᴇ ᴛᴇʟʟ, ᴡʜᴀᴛ sʜᴏᴜʟᴅ ɪ ᴅᴏ ᴡɪᴛʜ ᴛʜɪs ғɪʟᴇ.?\n"""
+        buttons = [[ InlineKeyboardButton("✎✧ S𝚝ar𝚝 re𝚗aᗰi𝚗g ✧✎", callback_data="rename") ],
                            [ InlineKeyboardButton("🔏G͢e͢n͢e͢r͢a͢t͢e͢ L͢i͢n͢k͢ ", callback_data="getlazylink") ],
                            [ InlineKeyboardButton("⨳  C L Ф S Ξ  ⨳", callback_data="cancel") ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -757,8 +757,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
 
     elif query.data == "reqauthlazyhome":
-        text = f"""\n⨳ *•.¸♡ L҉ΛＺ𝐲 ＭⓄｄ𝓔 ♡¸.•* ⨳\n\n**Please tell, what should i do with this file.?**\n"""
-        buttons = [[ InlineKeyboardButton("📝✧ S𝚝ar𝚝 re𝚗aᗰi𝚗g ✧📝", callback_data="requireauth") ],
+        text = f"""\n⨳ •.¸♡ ᖇᗴᑎᗩᗰᗴ ᗰOᗪᗴ ♡¸.• ⨳\n\nᴘʟᴇᴀsᴇ ᴛᴇʟʟ, ᴡʜᴀᴛ sʜᴏᴜʟᴅ ɪ ᴅᴏ ᴡɪᴛʜ ᴛʜɪs ғɪʟᴇ.?**\n"""
+        buttons = [[ InlineKeyboardButton("✎✧ S𝚝ar𝚝 re𝚗aᗰi𝚗g ✧✎", callback_data="requireauth") ],
                            [ InlineKeyboardButton("🔏G͢e͢n͢e͢r͢a͢t͢e͢ L͢i͢n͢k͢", callback_data="reqauthgetlazylink") ],
                            [ InlineKeyboardButton("⨳  C L Ф S Ξ  ⨳", callback_data="cancel") ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -788,8 +788,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "rfrsh":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 𝙱𝙰𝙲𝙺', callback_data='help'),
-            InlineKeyboardButton('♻️ 𝚁𝙴𝙵𝚁𝙴𝚂𝙷', callback_data='rfrsh')
+            InlineKeyboardButton('☆    ᏴᎪᏟᏦ    ☆', callback_data='help'),
+            InlineKeyboardButton('𖣘  ᎡᎬҒᎡᎬՏᎻ  𖣘', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -941,7 +941,7 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0,
         [ 
-	    InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://telegram.me/LazyDeveloper')
+	    InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://telegram.me/')
         ] 
     )
 
